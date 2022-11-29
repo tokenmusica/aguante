@@ -1,14 +1,17 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>document</title>
-	<script src= "https://aframe.io/releases/1.3.0/aframe.min.js"></script > 
-</head>
-<body>
-	<a-scene>
-		<a-sky src="hdr.mp4"></a-sky>
+     <head>
+     	<meta name="apple-movile-web-app-capable" /> 
+     	<script type="https://aframe.io/releases/1.3.0/aframe.min.js"></script> 
+     </head>
+     <body>
+     	<a-scene>
+     		<a-assets>
+     			<video id="hrdi.mp4" autoplay loop ="true"  src ="video/hrdi.mp4" ><video/>
+     		</a-assets>
+     				
+     	    <a-videosphere src="#hrdi.mp4"></a-videosphere>
+     	</a-scene>
+     </body>
+     </html>
 
-</body>
-</html>
