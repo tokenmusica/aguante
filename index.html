@@ -1,21 +1,67 @@
-<!DOCTYPEhtml >
-<html> _ _
-    < cabeza >
-        < meta  name =" apple-mobile-web-app-capable " content =" sí " >
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.1/aframe.min.js"></script><script src="js/app.js"></script>
+  </head>
+  <body>
+    <a-scene>
 
-        < script  src =" https://aframe.io/releases/0.2.0/aframe.js " > </ script >
-    </ cabeza >
 
-    < cuerpo >
-        <una-escena> _ _
-            < a-activos >
-                < video  id =" SphereVideo " bucle de reproducción automática  =" true " src =" tkm_VP9.webm " webkit-playsinline >
-            </ a-activos >
+      <a-assets>
 
+      <a-assets-item id="boton"
+        src="3d/boton.glb">
+      </a-assets-item>
         
-            < a-videosphere  src =" #SphereVideo " > </ a-videosphere >
+     </a-assets>
 
-            
-        </a-escena> _ _
-    </ cuerpo >
-</html> _ _
+      <a-entity
+        gltf-model="#boton"
+        posicion="0 9 0"
+        scale=" 9 9 9">
+      </a-entity>
+
+       <a-entity 
+       position="0 -3 0" 
+       rotation="0 0 0"
+       animation="property: rotation; to: 0 360 0; loop: true; dur: 50000;">
+
+
+
+
+<a-plane position="5.36326 0.75657 -5.48744" rotation="-30.90820825833226 -39.787908167269755 0.39476792084513723" width="4" height="4" src="img/pantalla.jpg" material="opacity: 0.46; side: double" geometry=""></a-plane>
+
+<a-entity camera="" position="2.75124 5.26405 1.43412" wasd-controls="" rotation="18.907607239317183 21.19943841984044 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+
+      
+
+      </a-entity>
+
+<a-sphere
+
+         src ="img/VR.jpg"
+
+        position="0 6 -8"
+        radio="0.5"
+        animation="property: rotation; to: 0 360 0; loop: true; dur: 10000;">
+
+          
+        </a-sphere>
+
+
+
+
+
+<a-entity light="color: #BBB; type: ambient" data-aframe-default-light="" aframe-injected=""></a-entity>
+
+<a-entity light="intensity: 0.6; castShadow: true" position="-0.5 1 1" data-aframe-default-light="" aframe-injected=""></a-entity>
+
+   
+<a-plane position="11.22724 4.97551 15.22458" rotation="-0.3901824934677778 68.9991341005245 2.239097047576501" width="4" height="4" src="img/pantalla1.png" material="side: double" geometry="" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-plane>
+      
+
+      <a-sky src="img/fotoa.jpg"></a-sky>
+    </a-scene>
+  </body>
+</html>
+
